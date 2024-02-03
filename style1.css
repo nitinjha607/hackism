@@ -21,7 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #fff;
+    background: #e6e6ea;
     padding: 50px 60px 70px;
     text-align: center;
 }
@@ -144,5 +144,54 @@ form p a {
 }
 
 .btn-field button.disable {
-    background: #eaeaea;
+    background: #6d6191;
+}
+
+#createRoomBtn {
+    background-color: #888b94;
+    color: rgb(17, 192, 241);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+#roomList {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #c0b8c0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: white;
+}
+
+/* Add this to your existing style1.css */
+
+.formbox {
+    background: url('https://img.freepik.com/free-photo/graphic-2d-colorful-wallpaper-with-grainy-gradients_23-2151001633.jpg?size=626&ext=jpg') center center/cover no-repeat;
+    /* Replace 'path/to/your/image.jpg' with your image file path */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
 }
