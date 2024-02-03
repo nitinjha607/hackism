@@ -1,36 +1,39 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family:'poppins', sans-serif;
+    font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url(back1\,jpg.webp);
+    background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)), url(back1\,jpg.webp);
     background-position: center;
     background-size: cover;
     position: relative;
 }
-.formbox{
+
+.formbox {
     width: 90%;
     max-width: 450px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background: #fff;
     padding: 50px 60px 70px;
     text-align: center;
 }
-.formbox h1{
+
+.formbox h1 {
     font-size: 30px;
     margin-bottom: 60px;
     color: #3c00a0;
     position: relative;
 }
-.formbox h1::after{
+
+.formbox h1::after {
     content: '';
     width: 30px;
     height: 4px;
@@ -41,7 +44,8 @@
     left: 50%;
     transform: translateX(-50%);
 }
-.inputfield{
+
+.inputfield {
     background: #eaeaea;
     margin: 15px 0;
     border-radius: 3px;
@@ -51,31 +55,37 @@
     transition: max-height 0.5s;
     overflow: hidden;
 }
-input{
+
+input {
     width: 100%;
     background: transparent;
     border: 0;
     outline: 0;
     padding: 18px 15px;
 }
-.inputfield i{
+
+.inputfield i {
     margin-left: 15px;
     color: #999;
 }
-form p{
+
+form p {
     text-align: left;
     font-size: 13px;
 }
-form p a{
+
+form p a {
     text-decoration: none;
     color: #3c00a0;
 }
-.btn-field{
+
+.btn-field {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.btn-field button{
+
+.btn-field button {
     flex-basis: 48%;
     background: #3c00a0;
     color: #8b8488;
@@ -86,9 +96,70 @@ form p a{
     cursor: pointer;
     transition: background 1s;
 }
-.inputgroup{
+/* Add this style for the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logoutBtn {
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: #f44336;
+    /* Red color for logout button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+#logoutBtn:hover {
+    background-color: #d32f2f;
+    /* Darker red color on hover */
+}
+/* Add this style for the navbar */
+.navbar {
+    background-color: #333; /* Dark background color for the navbar */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#logoutBtn {
+    cursor: pointer;
+    background-color: #f44336; /* Red color for logout button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#logoutBtn:hover {
+    background-color: #d32f2f; /* Darker red color on hover */
+}
+/* Add this style for the navbar */
+.navbar {
+    background-color: #333;
+    /* Dark background color for the navbar */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+.inputgroup {
     height: 280px;
 }
-.btn-field button.disable{
+
+.btn-field button.disable {
     background: #eaeaea;
 }
